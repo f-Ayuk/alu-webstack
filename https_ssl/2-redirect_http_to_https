@@ -36,7 +36,7 @@ defaults
 frontend www
         mode http
         bind :80
-        bind :443 ssl crt /etc/letsencrypt/live/www.eadewusic.tech/combined.pem
+        bind :443 ssl crt /etc/letsencrypt/live/www.fd-favor.tech/combined.pem
         http-request redirect code 301 scheme https unless { ssl_fc }
         default_backend webserver
 
